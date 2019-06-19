@@ -11,3 +11,12 @@ class Coin:
 
     def get_all_data(self):
         return [self.__rank, self.__name, self.__symbol, self.__mcap, self.__price]
+        
+    def get_all_data_json(self):
+        return {
+                "rank": self.__rank, 
+                "name": self.__name, 
+                "symbol": self.__symbol, 
+                "market-cap": self.__mcap, 
+                "price": self.__price
+                }
